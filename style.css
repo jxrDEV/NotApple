@@ -1,0 +1,206 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Oswald', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.header {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(images/orange1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+nav .logo {
+  width: 3%;
+  margin-left: 30px;
+}
+
+nav {
+  width: 100%;
+  padding: 20px;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  top: 0;
+  align-items: center;
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 13px;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin-left: 15px;
+  margin-right: 50px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+h1 {
+  font-family: 'Oswald';
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 50px;
+  margin-top: 440px;
+}
+
+
+.second-page {
+  width: 100%;
+  height: 200vh;
+  overflow-y: hidden;
+}
+
+.second-title {
+  width: 100%;
+  height: 100vh;
+  word-spacing: 30px;
+  text-align: center;
+}
+
+.text1 {
+  font-size: 100px;
+}
+
+.text2 {
+  font-size: 100px;
+}
+
+.back-video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  border: none;
+  background-attachment: fixed;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .back-video {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .back-video {
+    width: auto;
+    height: 100%;
+  }
+}
+
+.circle {
+  position: fixed;
+  background: #b9bd47;
+  border-radius: 50%;
+  width: 45vh;
+  height: 45vh;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+  z-index: -1;
+}
+
+.third-page {
+  background-image: url(images/orange2.jpg);
+  background-color: black;
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+}
+
+.orange-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+}
+
+.inner-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  margin-right: 150px;
+}
+
+.inner-container h2 {
+  margin-bottom: 33px;
+  color: #ffffff;
+}
+
+.inner-container p {
+  margin-bottom: 30px;
+  line-height: 1.5;
+  color: #ffffff;
+}
+
+.inner-container button {
+  padding: 20px 115px;
+  background-color: transparent;
+  border: 2px solid white;
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.inner-container button:hover {
+  transition: all 0.3s ease;
+  background-color: white;
+  color: black;
+}
+
+@media screen and (max-width: 600px) {
+  .second-page .circle {
+    width: 34vh;
+    height: 34vh;
+  }
+
+  h1 {
+    margin-top: 490px;
+  }
+
+  .second-title {
+    word-spacing: 20px;
+  }
+
+  .text1 {
+    font-size: 55px;
+  }
+
+  .text2 {
+    font-size: 55px;
+  }
+
+  .third-page {
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+
+  .inner-container {
+    margin: auto;
+  }
+
+  .inner-container h2 {
+    font-size: 50px;
+    margin-top: 100px;
+    margin-bottom: 20px;
+  }
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-sclae=1.0">
+    <title>This is an Apple</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="cart.css">
+  </head>
+  <body>
+    <div class="header">
+      <nav>
+        <img src="images/logo.svg" class="logo">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="science.html">Science</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="">Cart</a></li>
+        </ul>
+      </nav>
+
+      <div class="cart-page" >
+        <div class="title">
+          <h1>Shopping Cart</h1>
+        </div>
+        <div class="top">
+          <div class="top-text">
+            <h3>Product</h3>
+            <h3>Price</h3>
+            <h3>Quantity</h3>
+            <h3>Total</h3>
+          </div>
+          <hr>
+        </div>
+        <div class="cart-box">
+          <div class="product-details">
+            <div class="image-name">
+              <img src="images/orangebox.webp">
+              <div class="product-name">
+                <h3 class="text-weight">
+                  2kg Naval Oranges
+                </h3>
+              </div>
+            </div>
+            <h3 class="text-weight1">500</h3>
+            
+            <div class="wrapper-button">
+              <span class="minus" onclick="minusButton()">-</span>
+              <span class="num">1</span>
+              <span class="plus" onclick="plusButton()">+</span>
+            </div>
+
+            <h3 class="text-weight2" id="total" onclick="add()">500</h3>
+          </div>
+            <hr class="line-below">
+          <div>
+      </div>
+      <div class="checkout">
+        <a href="#popup1">
+          <button>Checkout</button>
+        </a>
+        
+      </div>
+
+      <div id="popup1" class="overlay">
+        <div class="popup">
+          <h2>Hello</h2>
+          <a class="close" href="#">&times;</a>
+          <div class="content">
+            Thank you for purchasing your product will not arrive.
+          </div>
+        </div>
+      </div>
+        </div>
+      </div>
+      
+    </div>
+    
+    <script src="cart.js"></script>
+  </body>
+</html>

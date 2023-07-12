@@ -1,0 +1,229 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Oswald', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.header {
+  width: 100%;
+  height: 95vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(images/orange-back.png);
+  background-position: 100px 100px 100px;
+  background-size: 100% 100%;
+}
+
+nav .logo {
+  width: 3%;
+  margin-left: 30px;
+}
+
+nav {
+  width: 100%;
+  padding: 20px;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  top: 0;
+  align-items: center;
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 13px;
+  z-index: 1;
+  background-color: white;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin-left: 15px;
+  margin-right: 50px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.orange-box {
+  width: 40%;
+  position: relative;
+  margin-right: 30px;
+  mix-blend-mode: multiply;
+}
+
+.first-page {
+  width: 100%;
+  height: 100vh;
+}
+
+.outer-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.outer-container .banner {
+  margin-right: 70px;
+  margin-bottom: 70px;
+  font-size: 35px;
+  display: flex;
+  flex-direction: column;
+}
+
+.inner-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  margin-right: 90px;
+}
+
+.inner-container h1 {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.inner-container p {
+  margin-bottom: 30px;
+  line-height: 24px;
+}
+
+.inner-container button {
+  width: 100%;
+  padding: 20px 140px;
+  background-color: #a1ab3d;
+  border: 1px solid #a1ab3d;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.inner-container button:hover {
+  transition: all 0.3s ease;
+  background-color: white;
+  border: 1px solid #a1ab3d;
+  color: black;
+}
+
+.second-page {
+  width: 100%;
+  height: 80vh;
+}
+
+.header2 {
+  width: 100%;
+  height: 80vh;
+  background-image: url(images/orange-back2.png);
+  background-position: 100px 100px 100px;
+  background-size: cover;
+}
+
+.health-container {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+
+}
+
+.benefits {
+  width: 110%;
+  height: 65vh;
+  display: flex;
+  background-color: #e1e3b0;
+  border-radius: 28px;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  padding-left: 80px;
+  padding-right: 75px;
+}
+
+.benefits h1 {
+  font-size: 20px;
+  margin-bottom: 18px;
+}
+
+.benefits li {
+  display: inline-block;
+  list-style: none;
+  font-size: 25px;
+  margin-right: -85px;
+  width: 100%;
+  border-bottom: 1px solid rgb(164, 164, 164);
+  line-height: 67px;
+}
+
+@media screen and (max-width: 600px) {
+
+  .outer-container {
+    margin-top: 5px;
+    flex-direction: column;
+  }
+
+  .outer-container .banner {
+    margin-right: 170px;
+    margin-bottom: 50px;
+    font-size: 25px;
+  }
+
+  .orange-box {
+    width: 100%;
+    margin-bottom: 60px;
+  }
+
+  .inner-container {
+    align-items: start;
+    margin: 0 5px;
+    margin-top: 10px;
+  }
+
+  .inner-container p {
+    margin-top: 20px;
+    font-size: 15px;
+  }
+
+  .inner-container button {
+    margin-top: 0px;
+    margin-bottom: 15px;
+  }
+
+  .header {
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+  }
+
+  .second-page {
+    width: 100%;
+    height: 80vh;
+  }
+
+  .header2 {
+    background-position: center;
+    background-size: cover;
+  }
+
+  .benefits {
+    margin-top: 50px;
+    width: 90%;
+    margin-left: 20px;
+    padding: 0 30px;
+  }
+
+  .benefits li {
+    width: 100%;
+    font-size: 17px;
+    line-height: 38px;
+    margin-bottom: 6px;
+  }
+
+}
+
+@media screen and (max-width: 768px) {}
